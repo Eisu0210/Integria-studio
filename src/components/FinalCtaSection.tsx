@@ -119,99 +119,108 @@ export function FinalCtaSection() {
 
   return (
     <section id="contact-form" className="content-section final-cta">
-      <p className="overline">Passer a l action</p>
-      <h2>Demandez un audit IA adapte a vos priorites business.</h2>
-      <p>
-        Decrivez rapidement votre contexte. Nous revenons vers vous avec un premier cadrage
-        concret des opportunites d automatisation et d integration IA.
-      </p>
-
-      <form className="lead-form" onSubmit={handleSubmit} data-form="lead-audit">
-        <div className="form-grid">
-          <label htmlFor="lead-name">
-            Nom
-            <input
-              id="lead-name"
-              name="name"
-              type="text"
-              autoComplete="name"
-              required
-              value={values.name}
-              onChange={handleChange}
-              data-form-field="name"
-            />
-          </label>
-
-          <label htmlFor="lead-email">
-            Email pro
-            <input
-              id="lead-email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              value={values.email}
-              onChange={handleChange}
-              data-form-field="email"
-            />
-          </label>
-
-          <label htmlFor="lead-company">
-            Entreprise
-            <input
-              id="lead-company"
-              name="company"
-              type="text"
-              autoComplete="organization"
-              required
-              value={values.company}
-              onChange={handleChange}
-              data-form-field="company"
-            />
-          </label>
-        </div>
-
-        <label htmlFor="lead-message">
-          Besoin / message
-          <textarea
-            id="lead-message"
-            name="message"
-            rows={4}
-            required
-            autoComplete="off"
-            value={values.message}
-            onChange={handleChange}
-            data-form-field="message"
-            placeholder="Ex: qualification des leads entrants, integration CRM, support 24/7..."
-          />
-        </label>
-
-        <div className="form-actions">
-          <button
-            type="submit"
-            className="button button-primary"
-            data-cta="form-submit-audit"
-            disabled={submitState === 'submitting'}
-          >
-            {submitState === 'submitting' ? 'Envoi en cours...' : 'Demander un audit'}
-          </button>
-          <a
-            className="button button-ghost"
-            href={fallbackMailtoHref}
-            data-cta="form-mail-fallback"
-          >
-            Nous ecrire par email
-          </a>
-        </div>
-
-        {feedbackMessage && (
-          <p className={`form-feedback ${submitState === 'success' ? 'is-success' : 'is-error'}`}>
-            {feedbackMessage}
+      <div className="cta-layout">
+        <div className="cta-copy">
+          <p className="overline">Passer a l action</p>
+          <h2>Demandez un audit IA adapte a vos priorites business.</h2>
+          <p>
+            Decrivez rapidement votre contexte. Nous revenons vers vous avec un premier cadrage
+            concret des opportunites d automatisation et d integration IA.
           </p>
-        )}
+          <ul>
+            <li>Audit cible de vos flux prioritaires</li>
+            <li>Recommandations actionnables sous 48h</li>
+            <li>Vision claire du ROI attendu</li>
+          </ul>
+        </div>
 
-        <p className="form-note">{helpMessage}</p>
-      </form>
+        <form className="lead-form" onSubmit={handleSubmit} data-form="lead-audit">
+          <div className="form-grid">
+            <label htmlFor="lead-name">
+              Nom
+              <input
+                id="lead-name"
+                name="name"
+                type="text"
+                autoComplete="name"
+                required
+                value={values.name}
+                onChange={handleChange}
+                data-form-field="name"
+              />
+            </label>
+
+            <label htmlFor="lead-email">
+              Email pro
+              <input
+                id="lead-email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                value={values.email}
+                onChange={handleChange}
+                data-form-field="email"
+              />
+            </label>
+
+            <label htmlFor="lead-company">
+              Entreprise
+              <input
+                id="lead-company"
+                name="company"
+                type="text"
+                autoComplete="organization"
+                required
+                value={values.company}
+                onChange={handleChange}
+                data-form-field="company"
+              />
+            </label>
+          </div>
+
+          <label htmlFor="lead-message">
+            Besoin / message
+            <textarea
+              id="lead-message"
+              name="message"
+              rows={4}
+              required
+              autoComplete="off"
+              value={values.message}
+              onChange={handleChange}
+              data-form-field="message"
+              placeholder="Ex: qualification des leads entrants, integration CRM, support 24/7..."
+            />
+          </label>
+
+          <div className="form-actions">
+            <button
+              type="submit"
+              className="button button-primary"
+              data-cta="form-submit-audit"
+              disabled={submitState === 'submitting'}
+            >
+              {submitState === 'submitting' ? 'Envoi en cours...' : 'Demander un audit'}
+            </button>
+            <a
+              className="button button-ghost"
+              href={fallbackMailtoHref}
+              data-cta="form-mail-fallback"
+            >
+              Nous ecrire par email
+            </a>
+          </div>
+
+          {feedbackMessage && (
+            <p className={`form-feedback ${submitState === 'success' ? 'is-success' : 'is-error'}`}>
+              {feedbackMessage}
+            </p>
+          )}
+
+          <p className="form-note">{helpMessage}</p>
+        </form>
+      </div>
     </section>
   )
 }

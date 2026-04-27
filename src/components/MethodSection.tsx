@@ -3,8 +3,8 @@ import { SectionHeading } from './SectionHeading'
 
 export function MethodSection() {
   return (
-    <section id="integration" className="content-section integration-layout">
-      <div>
+    <section id="integration" className="content-section method-section">
+      <div className="method-main">
         <SectionHeading
           overline="Methode et integration"
           title="Une mise en place claire, compatible avec votre ecosysteme."
@@ -22,8 +22,22 @@ export function MethodSection() {
       </div>
 
       <aside className="integration-panel">
-        <h3>Comment ca s integre</h3>
-        <p>
+        <h3>Architecture d integration</h3>
+        <div className="integration-schema">
+          <div>
+            <p>Entrees</p>
+            <strong>Web, email, appels, support</strong>
+          </div>
+          <div>
+            <p>Orchestration</p>
+            <strong>API, webhooks, no-code, low-code</strong>
+          </div>
+          <div>
+            <p>Sorties metier</p>
+            <strong>CRM, agenda, operations, reporting</strong>
+          </div>
+        </div>
+        <p className="integration-copy">
           Nous connectons les flux entre vos canaux d entree, vos outils de pilotage et vos
           equipes pour garantir une execution simple et robuste.
         </p>
