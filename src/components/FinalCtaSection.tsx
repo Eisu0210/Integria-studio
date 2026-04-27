@@ -18,7 +18,7 @@ const initialValues: LeadFormValues = {
 }
 
 function buildMailtoHref(values: LeadFormValues) {
-  const subject = encodeURIComponent('Demande d audit IA - Integria Studio')
+  const subject = encodeURIComponent('Demande d’audit IA - Integria Studio')
   const body = encodeURIComponent(
     [
       'Bonjour Integria Studio,',
@@ -26,10 +26,10 @@ function buildMailtoHref(values: LeadFormValues) {
       'Je souhaite demander un audit.',
       '',
       `Nom: ${values.name}`,
-      `Email pro: ${values.email}`,
-      `Entreprise: ${values.company}`,
+      `Email pro : ${values.email}`,
+      `Entreprise : ${values.company}`,
       '',
-      'Besoin / message:',
+      'Besoin / message :',
       values.message,
     ].join('\n'),
   )
@@ -48,8 +48,8 @@ export function FinalCtaSection() {
   const helpMessage = useMemo(
     () =>
       hasEndpoint
-        ? 'Envoi connecte a un endpoint de collecte configure via VITE_LEAD_FORM_ENDPOINT.'
-        : 'Aucun endpoint n est encore configure. Le bouton secondaire ouvre un email pre-rempli vers contact@integria.studio.',
+        ? 'Envoi connecté à un endpoint de collecte configuré via VITE_LEAD_FORM_ENDPOINT.'
+        : 'Aucun endpoint n’est encore configuré. Le bouton secondaire ouvre un email prérempli vers contact@integria.studio.',
     [hasEndpoint],
   )
 
@@ -104,7 +104,7 @@ export function FinalCtaSection() {
 
       setSubmitState('success')
       setFeedbackMessage(
-        'Merci. Votre demande a bien ete envoyee, nous revenons vers vous rapidement.',
+        'Merci. Votre demande a bien été envoyée, nous revenons vers vous rapidement.',
       )
       setValues(initialValues)
       setFallbackMailtoHref(buildMailtoHref(initialValues))
@@ -112,7 +112,7 @@ export function FinalCtaSection() {
     } catch {
       setSubmitState('error')
       setFeedbackMessage(
-        'L envoi automatique n a pas abouti. Utilisez le lien email ci-dessous pour nous transmettre votre demande sans perdre les informations saisies.',
+        'L’envoi automatique n’a pas abouti. Utilisez le lien email ci-dessous pour nous transmettre votre demande sans perdre les informations saisies.',
       )
     }
   }
@@ -121,15 +121,14 @@ export function FinalCtaSection() {
     <section id="contact-form" className="content-section final-cta">
       <div className="cta-layout">
         <div className="cta-copy">
-          <p className="overline">Passer a l action</p>
-          <h2>Demandez un audit IA adapte a vos priorites business.</h2>
+          <p className="overline">Passer à l’action</p>
+          <h2>Demandez un audit IA adapté à vos priorités business.</h2>
           <p>
-            Decrivez rapidement votre contexte. Nous revenons vers vous avec un premier cadrage
-            concret des opportunites d automatisation et d integration IA.
+            Décrivez votre contexte. Nous revenons vers vous avec un premier cadrage concret des opportunités d’automatisation et d’intégration IA.
           </p>
           <ul>
-            <li>Audit cible de vos flux prioritaires</li>
-            <li>Recommandations actionnables sous 48h</li>
+            <li>Audit ciblé de vos flux prioritaires</li>
+            <li>Recommandations actionnables sous 48 h</li>
             <li>Vision claire du ROI attendu</li>
           </ul>
         </div>
@@ -190,7 +189,7 @@ export function FinalCtaSection() {
               value={values.message}
               onChange={handleChange}
               data-form-field="message"
-              placeholder="Ex: qualification des leads entrants, integration CRM, support 24/7..."
+              placeholder="Ex : qualification des leads entrants, intégration CRM, support 24/7..."
             />
           </label>
 
@@ -201,14 +200,14 @@ export function FinalCtaSection() {
               data-cta="form-submit-audit"
               disabled={submitState === 'submitting'}
             >
-              {submitState === 'submitting' ? 'Envoi en cours...' : 'Demander un audit'}
+              {submitState === 'submitting' ? 'Envoi en cours…' : 'Demander un audit'}
             </button>
             <a
               className="button button-ghost"
               href={fallbackMailtoHref}
               data-cta="form-mail-fallback"
             >
-              Nous ecrire par email
+            Nous écrire par email
             </a>
           </div>
 

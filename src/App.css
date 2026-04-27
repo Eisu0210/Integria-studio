@@ -137,7 +137,7 @@ h1 span {
 .button-primary {
   background: var(--ink-strong);
   border-color: var(--ink-strong);
-  color: #f7f6f1;
+  color: #f3f8fb;
 }
 
 .button-primary:hover,
@@ -195,7 +195,7 @@ h1 span {
 .hero-visual {
   border: 1px solid var(--line-soft);
   border-radius: 14px;
-  background: #fbfaf5;
+  background: linear-gradient(160deg, #f7fbff 0%, #f1f7fc 100%);
   padding: 1rem;
 }
 
@@ -230,7 +230,7 @@ h1 span {
 .orchestration-grid article {
   border: 1px solid var(--line-muted);
   border-radius: 10px;
-  background: #fff;
+  background: #ffffff;
   padding: 0.75rem;
 }
 
@@ -259,7 +259,7 @@ h1 span {
 
 .orchestration-rail span {
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, var(--ink-accent) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #3f8ca5 50%, transparent 100%);
 }
 
 main {
@@ -300,7 +300,7 @@ main {
 .offer-card {
   border: 1px solid var(--line-soft);
   border-radius: 12px;
-  background: #fff;
+  background: var(--surface-soft);
   padding: 1rem;
   display: grid;
   gap: 0.9rem;
@@ -341,6 +341,13 @@ main {
 .offer-details > div {
   border-top: 1px solid var(--line-muted);
   padding-top: 0.7rem;
+}
+
+.offer-integration {
+  border-top: 1px solid var(--line-muted);
+  padding-top: 0.7rem;
+  font-size: 0.84rem;
+  color: var(--ink-subtle);
 }
 
 .offer-card h4 {
@@ -415,7 +422,7 @@ main {
   padding: 0.72rem 0.8rem;
   border: 1px solid var(--line-soft);
   border-radius: 10px;
-  background: #fff;
+  background: #ffffff;
   min-width: 0;
 }
 
@@ -447,7 +454,7 @@ main {
   border: 1px solid var(--line-soft);
   border-radius: 10px;
   padding: 0.8rem;
-  background: #fff;
+  background: #ffffff;
 }
 
 .step-item h3 {
@@ -463,7 +470,7 @@ main {
 .integration-panel {
   border: 1px solid var(--line-soft);
   border-radius: 12px;
-  background: #f7f6f1;
+  background: linear-gradient(160deg, #eff6fb 0%, #f7fbff 100%);
   padding: 0.95rem;
 }
 
@@ -480,7 +487,7 @@ main {
 .integration-schema div {
   border: 1px solid var(--line-muted);
   border-radius: 8px;
-  background: #fff;
+  background: #ffffff;
   padding: 0.65rem;
 }
 
@@ -516,7 +523,7 @@ main {
   border: 1px solid var(--line-soft);
   border-radius: 7px;
   padding: 0.3rem 0.5rem;
-  background: #fff;
+  background: #ffffff;
   color: var(--ink-muted);
   font-size: 0.73rem;
 }
@@ -533,7 +540,7 @@ main {
   margin-top: 1.5rem;
   border: 1px solid var(--line-soft);
   border-radius: 12px;
-  background: #fff;
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -544,7 +551,7 @@ main {
   gap: 0.7rem;
   padding: 0.75rem 0.9rem;
   border-bottom: 1px solid var(--line-muted);
-  background: #f8f7f2;
+  background: #eef4f8;
 }
 
 .demo-head p {
@@ -570,7 +577,7 @@ main {
 .demo-tabs button {
   border: 1px solid var(--line-soft);
   border-radius: 7px;
-  background: #fff;
+  background: #ffffff;
   padding: 0.38rem 0.65rem;
   font-size: 0.8rem;
   color: var(--ink-strong);
@@ -580,7 +587,7 @@ main {
 .demo-tabs .is-active {
   border-color: var(--ink-strong);
   background: var(--ink-strong);
-  color: #f7f6f1;
+  color: #f3f8fb;
 }
 
 .demo-panel {
@@ -618,16 +625,16 @@ main {
 }
 
 .message.assistant {
-  border: 1px solid #d7dee1;
-  background: #f6f8f9;
+  border: 1px solid #d2dde8;
+  background: #f4f8fc;
   color: #253034;
 }
 
 .message.client {
   margin-left: auto;
-  border: 1px solid #d9d4c6;
-  background: #f8f5ed;
-  color: #332f24;
+  border: 1px solid #c5d9e5;
+  background: #ecf6fc;
+  color: #1f3947;
 }
 
 .demo-outcome {
@@ -644,7 +651,7 @@ main {
 .cta-layout {
   border: 1px solid var(--line-soft);
   border-radius: 12px;
-  background: #fff;
+  background: #ffffff;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: 1rem;
@@ -676,7 +683,7 @@ main {
 .lead-form {
   border: 1px solid var(--line-soft);
   border-radius: 10px;
-  background: #f8f7f2;
+  background: #f1f6fb;
   padding: 0.8rem;
   display: grid;
   gap: 0.8rem;
@@ -700,9 +707,9 @@ main {
 .lead-form input,
 .lead-form textarea {
   width: 100%;
-  border: 1px solid #c9c3b4;
+  border: 1px solid #c6d5e2;
   border-radius: 7px;
-  background: #fff;
+  background: #ffffff;
   color: var(--ink-strong);
   padding: 0.58rem 0.65rem;
   font: inherit;
@@ -716,14 +723,14 @@ main {
 
 .lead-form input::placeholder,
 .lead-form textarea::placeholder {
-  color: #70767a;
+  color: #708291;
 }
 
 .lead-form input:focus-visible,
 .lead-form textarea:focus-visible {
   outline: none;
-  border-color: #7a6c4f;
-  box-shadow: 0 0 0 2px rgba(122, 108, 79, 0.17);
+  border-color: #2f7a92;
+  box-shadow: 0 0 0 2px rgba(47, 122, 146, 0.2);
 }
 
 .form-actions {

@@ -13,17 +13,17 @@ export function DemoSection() {
   return (
     <section id="demo" className="content-section demo-section">
       <SectionHeading
-        overline="Demo IA integree"
-        title="Visualisez une interaction utile, exploitable et connectee."
-        description="Cette demonstration simule des scenarios realistes de qualification, support et prise de rendez-vous."
+        overline="Démo IA intégrée"
+        title="Visualisez une interaction utile, exploitable et connectée."
+        description="Cette démonstration simule des scénarios réalistes de qualification, support et prise de rendez-vous."
       />
 
       <div className="demo-shell">
         <div className="demo-head">
-          <p>Simulation operationnelle</p>
-          <span>Flux assiste par IA et connecte au SI</span>
+          <p>Simulation opérationnelle</p>
+          <span>Flux assisté par IA et connecté au SI</span>
         </div>
-        <div className="demo-tabs" aria-label="Scenarios de demonstration">
+        <div className="demo-tabs" aria-label="Scénarios de démonstration">
           {demoScenarios.map((scenario) => (
             <button
               key={scenario.id}

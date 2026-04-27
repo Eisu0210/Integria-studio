@@ -19,82 +19,82 @@ export type DemoScenario = {
 export const navigation = [
   { label: 'Offres', href: '#offres' },
   { label: "Cas d'usage", href: '#cas-usage' },
-  { label: 'Integration', href: '#integration' },
-  { label: 'Demo IA', href: '#demo' },
+  { label: 'Intégration', href: '#integration' },
+  { label: 'Démo IA', href: '#demo' },
 ]
 
 export const offers: Offer[] = [
   {
     title: 'Automatisation IA pour PME',
     intro:
-      'Industrialisez les operations repetitives pour liberer vos equipes et accelerer les cycles commerciaux.',
+      'Automatisez les tâches répétitives pour accélérer les opérations et fiabiliser l’exécution.',
     problem:
-      'Des taches manuelles dispersent les equipes, ralentissent les reponses client et creent des pertes de suivi.',
+      'Des tâches manuelles dispersent les équipes, ralentissent les réponses client et créent des pertes de suivi.',
     benefits: [
-      'Gagnez jusqu a plusieurs heures par semaine et par equipe',
-      'Reduisez les erreurs de saisie et les oublis operationnels',
-      'Standardisez les processus pour une execution fiable',
+      'Gagnez plusieurs heures par semaine et par équipe',
+      'Réduisez les erreurs de saisie et les oublis opérationnels',
+      'Standardisez vos processus pour une exécution fiable',
     ],
     examples: [
-      'Relances commerciales automatisees apres devis',
-      'Extraction de donnees et creation automatique de fiches CRM',
-      'Routage intelligent des demandes vers le bon interlocuteur',
+      'Relances commerciales automatisées après devis',
+      'Extraction de données et création de fiches CRM',
+      'Routage intelligent vers le bon interlocuteur',
     ],
     integration:
-      'Connecte aux outils CRM, email, support et aux applications internes via API, webhooks ou no-code/low-code.',
-    cta: 'Etudier mon besoin',
+      'Connecté à votre CRM, votre messagerie et vos outils internes via API ou webhooks.',
+    cta: 'Étudier mon besoin',
   },
   {
     title: 'Chatbot IA site web / support / qualification',
     intro:
-      'Transformez votre site en canal de conversion et de support 24/7 avec un assistant utile et oriente business.',
+      'Transformez votre site en canal de conversion et de support 24/7, sans surcharge équipe.',
     problem:
-      'Les visiteurs repartent sans reponse immediate, les equipes support sont sollicitees sur des questions repetitives.',
+      'Les visiteurs repartent sans réponse immédiate, les équipes support sont sollicitées sur des questions répétitives.',
     benefits: [
-      'Ameliorez le taux de conversion et la qualite des leads',
-      'Assurez une disponibilite continue sans surcharge des equipes',
+      'Améliorez le taux de conversion et la qualité des leads',
+      'Assurez une disponibilité continue sans surcharge support',
       'Structurez les demandes avant intervention humaine',
     ],
     examples: [
-      'FAQ dynamique et support client de premier niveau',
+      'FAQ dynamique et support de premier niveau',
       'Qualification automatique des prospects entrants',
-      'Orientation vers prise de rendez-vous ou formulaire cible',
+      'Orientation vers prise de rendez-vous ou formulaire ciblé',
     ],
     integration:
-      'Branche a votre site, base de connaissances, agenda et CRM pour transmettre des informations exploitables.',
-    cta: 'Demander une demo',
+      'Branché à votre site, à votre base documentaire, à l’agenda et au CRM.',
+    cta: 'Demander une démo',
   },
   {
     title: 'Agent vocal IA rendez-vous / standard / qualification',
     intro:
-      'Offrez un accueil telephonique continu et professionnel, avec qualification automatique et transfert intelligent.',
+      'Offrez un accueil téléphonique continu avec qualification automatique et routage intelligent.',
     problem:
-      'Les appels manques coutent des opportunites, et le standard absorbe du temps a faible valeur.',
+      'Les appels manqués coûtent des opportunités, et le standard absorbe du temps à faible valeur.',
     benefits: [
-      'Captez davantage de demandes entrantes hors horaires',
-      'Filtrez et qualifiez les appels avant escalation',
-      'Augmentez la reactivite commerciale et la satisfaction client',
+      'Captez plus de demandes entrantes hors horaires',
+      'Filtrez et qualifiez les appels avant escalade',
+      'Augmentez la réactivité commerciale et la satisfaction client',
     ],
     examples: [
-      'Prise de rendez-vous synchronisee avec agenda equipe',
-      'Standard telephonique IA avec identification du besoin',
-      'Qualification des leads et creation automatique dans le CRM',
+      'Prise de rendez-vous synchronisée avec l’agenda',
+      'Standard IA avec identification du besoin',
+      'Qualification des leads et création automatique dans le CRM',
     ],
     integration:
-      'Interconnecte avec telephonie, agenda, CRM et workflows internes pour un parcours fluide de bout en bout.',
-    cta: 'Reserver un echange',
+      'Interconnecté avec la téléphonie, l’agenda, le CRM et les workflows internes.',
+    cta: 'Réserver un échange',
   },
 ]
 
 export const useCases = [
-  'Assistant mail intelligent pour accelerer les reponses',
+  'Assistant mail intelligent pour accélérer les réponses',
   'Qualification automatique des leads entrants',
   'Chatbot FAQ et support client 24/7',
-  'Standard telephonique IA pour ne plus rater d appels',
-  'Relance commerciale automatisee selon vos cycles',
-  'Routage intelligent des demandes par priorite',
-  'Extraction et structuration de donnees operationnelles',
-  'Automatisations marketing et CRM orientees conversion',
+  'Standard téléphonique IA pour ne plus rater d’appels',
+  'Relance commerciale automatisée selon vos cycles',
+  'Routage intelligent des demandes par priorité',
+  'Extraction et structuration de données opérationnelles',
+  'Automatisations marketing et CRM orientées conversion',
 ]
 
 export const integrationTools = [
@@ -103,7 +103,7 @@ export const integrationTools = [
   'Site web',
   'Agenda',
   'Support',
-  'Telephone',
+  'Téléphone',
   'Outils internes',
   'API / webhooks / no-code / low-code',
 ]
@@ -111,52 +111,52 @@ export const integrationTools = [
 export const methodSteps = [
   {
     title: '1. Cadrage business',
-    text: 'Nous clarifions objectifs, priorites et indicateurs de performance avant toute implementation.',
+    text: 'Nous cadrons vos priorités, vos objectifs et vos indicateurs avant tout déploiement.',
   },
   {
-    title: '2. Design du systeme',
-    text: 'Nous concevons le flux IA adapte a vos contraintes metier, vos equipes et vos outils existants.',
+    title: '2. Design du système',
+    text: 'Nous concevons un flux IA adapté à vos contraintes métier et à votre organisation.',
   },
   {
-    title: '3. Integration progressive',
-    text: 'Nous deploiyons sans rupture operationnelle, avec tests, suivi et transfert de bonnes pratiques.',
+    title: '3. Intégration progressive',
+    text: 'Nous déployons sans rupture opérationnelle, avec tests, suivi et transfert des usages.',
   },
   {
-    title: '4. Pilotage des resultats',
-    text: 'Nous mesurons les gains reels et optimisons les scenarios pour maximiser la valeur business.',
+    title: '4. Pilotage des résultats',
+    text: 'Nous mesurons les gains réels et optimisons les scénarios pour maximiser la valeur.',
   },
 ]
 
 export const demoScenarios: DemoScenario[] = [
   {
     id: 'support',
-    title: 'Scenario support client',
-    context: 'Chatbot IA connecte a la base de connaissances et a votre outil support.',
+    title: 'Scénario support client',
+    context: 'Chatbot IA connecté à votre base de connaissances et à votre outil support.',
     messages: [
       {
         role: 'client',
-        text: 'Bonjour, je n arrive pas a connecter mon compte entreprise.',
+        text: 'Bonjour, je n’arrive pas à connecter mon compte entreprise.',
       },
       {
         role: 'assistant',
-        text: 'Je vous aide tout de suite. Souhaitez-vous verifier vos identifiants SSO ou reinitialiser l acces ?',
+        text: 'Je vous aide tout de suite. Souhaitez-vous vérifier vos identifiants SSO ou réinitialiser l’accès ?',
       },
       {
         role: 'client',
-        text: 'Verifier le SSO, nous utilisons Microsoft 365.',
+        text: 'Vérifier le SSO, nous utilisons Microsoft 365.',
       },
       {
         role: 'assistant',
-        text: 'Parfait. Je detecte une erreur de domaine. Je vous envoie la procedure corrigee et je cree un ticket si besoin.',
+        text: 'Parfait. Je détecte une erreur de domaine. Je vous envoie la procédure corrigée et je crée un ticket si besoin.',
       },
     ],
     outcome:
-      'Resultat: resolution en moins de 2 minutes et ticket pre-qualifie si escalade necessaire.',
+      'Résultat : résolution en moins de 2 minutes et ticket préqualifié si escalade nécessaire.',
   },
   {
     id: 'lead',
-    title: 'Scenario qualification lead',
-    context: 'Assistant commercial connecte au site et au CRM.',
+    title: 'Scénario qualification lead',
+    context: 'Assistant commercial connecté au site et au CRM.',
     messages: [
       {
         role: 'client',
@@ -164,7 +164,7 @@ export const demoScenarios: DemoScenario[] = [
       },
       {
         role: 'assistant',
-        text: 'Tres bien. Combien de leads qualifiez-vous par mois et quel CRM utilisez-vous actuellement ?',
+        text: 'Très bien. Combien de leads qualifiez-vous par mois et quel CRM utilisez-vous actuellement ?',
       },
       {
         role: 'client',
@@ -172,16 +172,16 @@ export const demoScenarios: DemoScenario[] = [
       },
       {
         role: 'assistant',
-        text: 'Merci. Je vous propose un audit cible et je peux vous reserver un echange de 30 minutes cette semaine.',
+        text: 'Merci. Je vous propose un audit ciblé et je peux vous réserver un échange de 30 minutes cette semaine.',
       },
     ],
     outcome:
-      'Resultat: lead qualifie, enrichi et synchronise dans le CRM avec proposition de rendez-vous.',
+      'Résultat : lead qualifié, enrichi et synchronisé dans le CRM avec proposition de rendez-vous.',
   },
   {
     id: 'voice',
-    title: 'Scenario agent vocal',
-    context: 'Standard vocal IA relie a l agenda et au CRM.',
+    title: 'Scénario agent vocal',
+    context: 'Standard vocal IA relié à l’agenda et au CRM.',
     messages: [
       {
         role: 'assistant',
@@ -193,7 +193,7 @@ export const demoScenarios: DemoScenario[] = [
       },
       {
         role: 'assistant',
-        text: 'Parfait. J ai une disponibilite mardi a 14h30. Je confirme et j envoie l invitation ?',
+        text: 'Parfait. J’ai une disponibilité mardi à 14h30. Je confirme et j’envoie l’invitation ?',
       },
       {
         role: 'client',
@@ -201,6 +201,6 @@ export const demoScenarios: DemoScenario[] = [
       },
     ],
     outcome:
-      'Resultat: rendez-vous confirme, fiche contact creee et parcours client trace automatiquement.',
+      'Résultat : rendez-vous confirmé, fiche contact créée et parcours client tracé automatiquement.',
   },
 ]

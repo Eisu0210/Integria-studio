@@ -6,8 +6,8 @@ export function OffersSection() {
     <section id="offres" className="content-section offers-section">
       <SectionHeading
         overline="Offres"
-        title="Trois leviers IA concrets pour accelerer vos performances."
-        description="Chaque offre est pensee pour un usage metier clair, une integration rapide et un resultat visible."
+        title="Trois leviers IA concrets pour accélérer vos performances."
+        description="Chaque offre est pensée pour un usage métier clair, une intégration rapide et un résultat visible."
       />
 
       <div className="offers-grid">
@@ -21,32 +21,24 @@ export function OffersSection() {
 
             <div className="offer-details">
               <div>
-                <h4>Probleme resolu</h4>
-                <p>{offer.problem}</p>
-              </div>
-
-              <div>
-                <h4>Benefices business</h4>
+                <h4>Bénéfices business</h4>
                 <ul>
-                  {offer.benefits.map((item) => (
+                  {offer.benefits.slice(0, 3).map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
               </div>
 
               <div>
-                <h4>Exemples d usage</h4>
+                <h4>Exemples d’usage</h4>
                 <ul>
-                  {offer.examples.map((example) => (
+                  {offer.examples.slice(0, 3).map((example) => (
                     <li key={example}>{example}</li>
                   ))}
                 </ul>
               </div>
 
-              <div>
-                <h4>Logique d integration</h4>
-                <p>{offer.integration}</p>
-              </div>
+              <p className="offer-integration">{offer.integration}</p>
             </div>
 
             <div className="offer-footer">

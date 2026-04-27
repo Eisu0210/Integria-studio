@@ -6,9 +6,9 @@ export function MethodSection() {
     <section id="integration" className="content-section method-section">
       <div className="method-main">
         <SectionHeading
-          overline="Methode et integration"
-          title="Une mise en place claire, compatible avec votre ecosysteme."
-          description="Integria Studio s adapte a votre existant pour limiter la friction technique et maximiser l adoption metier."
+          overline="Méthode et intégration"
+          title="Une mise en place claire, compatible avec votre écosystème."
+          description="Integria Studio s’adapte à votre existant pour limiter la friction technique et accélérer l’adoption métier."
         />
 
         <div className="steps-list">
@@ -22,24 +22,23 @@ export function MethodSection() {
       </div>
 
       <aside className="integration-panel">
-        <h3>Architecture d integration</h3>
+        <h3>Architecture d’intégration</h3>
         <div className="integration-schema">
           <div>
-            <p>Entrees</p>
+            <p>Entrées</p>
             <strong>Web, email, appels, support</strong>
           </div>
           <div>
             <p>Orchestration</p>
-            <strong>API, webhooks, no-code, low-code</strong>
+              <strong>API, webhooks, no-code, low-code</strong>
           </div>
           <div>
-            <p>Sorties metier</p>
-            <strong>CRM, agenda, operations, reporting</strong>
+            <p>Sorties métier</p>
+            <strong>CRM, agenda, opérations, reporting</strong>
           </div>
         </div>
         <p className="integration-copy">
-          Nous connectons les flux entre vos canaux d entree, vos outils de pilotage et vos
-          equipes pour garantir une execution simple et robuste.
+          Nous connectons vos canaux d’entrée, vos outils de pilotage et vos équipes pour garantir une exécution simple et robuste.
         </p>
         <div className="tool-tags">
           {integrationTools.map((tool) => (
@@ -47,8 +46,7 @@ export function MethodSection() {
           ))}
         </div>
         <p className="integration-note">
-          Connexions possibles via API, webhooks ou orchestration no-code/low-code selon vos
-          contraintes SI.
+          Connexions possibles via API, webhooks ou orchestration no-code/low-code selon vos contraintes SI.
         </p>
       </aside>
     </section>

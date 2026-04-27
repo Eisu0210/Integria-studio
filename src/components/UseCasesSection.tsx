@@ -7,17 +7,16 @@ export function UseCasesSection() {
       <div className="use-cases-intro">
         <SectionHeading
           overline="Univers des possibles"
-          title="Des cas d usage precis, applicables a vos enjeux terrain."
-          description="Nous deployons des systemes utiles, connectes a vos flux quotidiens, pour produire de la valeur des les premiers usages."
+          title="Des cas d’usage concrets, activables sur vos enjeux terrain."
+          description="Nous déployons des systèmes utiles, connectés à vos flux quotidiens, pour produire de la valeur rapidement."
         />
         <p className="use-cases-note">
-          Chaque cas d usage est pense pour etre relie a vos outils existants et active
-          rapidement sans bouleverser vos operations.
+          Chaque cas d’usage est pensé pour s’intégrer à vos outils existants sans alourdir vos opérations.
         </p>
       </div>
 
       <div className="use-cases-list">
-        {useCases.map((useCase, index) => (
+        {useCases.slice(0, 6).map((useCase, index) => (
           <article key={useCase} className="use-case-item">
             <span>{`0${index + 1}`}</span>
             <p>{useCase}</p>

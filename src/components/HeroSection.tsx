@@ -23,45 +23,45 @@ export function HeroSection() {
         <div className="hero-content">
           <p className="overline">Agence IA B2B</p>
           <h1>
-            L IA utile, integree a vos operations.
-            <span> Pas des promesses, des resultats mesurables.</span>
+            L’IA utile, intégrée à vos opérations.
+            <span> Pas des promesses, des résultats mesurables.</span>
           </h1>
           <p className="hero-description">
-            Integria Studio accompagne les entreprises sur l automatisation, le chatbot et
-            l agent vocal avec une approche deploiement-orientee business.
+            Integria Studio déploie l’automatisation, les chatbots et les agents vocaux
+            avec une approche orientée exécution et performance business.
           </p>
           <div className="hero-cta">
             <a className="button button-primary" href="#contact-form" data-cta="hero-audit">
               Demander un audit
             </a>
             <a className="button button-ghost" href="#contact-form" data-cta="hero-exchange">
-              Reserver un echange
+              Réserver un échange
             </a>
           </div>
           <dl className="hero-metrics">
             <div>
-              <dt>Temps gagne</dt>
+              <dt>Temps gagné</dt>
               <dd>-40%</dd>
             </div>
             <div>
-              <dt>Disponibilite</dt>
+              <dt>Disponibilité</dt>
               <dd>24/7</dd>
             </div>
             <div>
-              <dt>Leads qualifies</dt>
+              <dt>Leads qualifiés</dt>
               <dd>+30%</dd>
             </div>
           </dl>
         </div>
 
-        <aside className="hero-visual" aria-label="Systeme IA integre">
+        <aside className="hero-visual" aria-label="Système IA intégré">
           <div className="visual-head">
-            <p className="visual-title">Systeme d orchestration Integria</p>
-            <span>Architecture type de deploiement</span>
+            <p className="visual-title">Système d’orchestration Integria</p>
+            <span>Architecture type de déploiement</span>
           </div>
           <div className="orchestration-grid">
             <article>
-              <p>Entrees</p>
+              <p>Entrées</p>
               <strong>Site, email, appels, support</strong>
             </article>
             <article>
@@ -69,7 +69,7 @@ export function HeroSection() {
               <strong>Qualification, tri, priorisation</strong>
             </article>
             <article>
-              <p>Execution</p>
+              <p>Exécution</p>
               <strong>Actions CRM, agenda, support</strong>
             </article>
             <article>

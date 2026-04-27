@@ -3,11 +3,11 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div>
         <p className="brand">Integria Studio</p>
-        <p>Agence IA B2B - Automatisation, chatbots et agents vocaux integres.</p>
+        <p>Agence IA B2B - Automatisation, chatbots et agents vocaux intégrés.</p>
       </div>
       <div className="footer-links">
         <a href="#offres">Offres</a>
-        <a href="#integration">Integration</a>
+        <a href="#integration">Intégration</a>
         <a href="#contact-form">Demander un audit</a>
       </div>
       <div className="footer-meta">

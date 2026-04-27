@@ -1,6 +1,6 @@
 :root {
   font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Georgia', 'Times New Roman', serif;
+  --font-display: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #273136;
@@ -9,15 +9,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bg-primary: #f5f4ef;
-  --surface-soft: #fbfaf7;
-  --ink-strong: #182126;
-  --ink-muted: #49575d;
-  --ink-subtle: #6a767b;
-  --ink-accent: #697760;
-  --line-soft: #cfd3c8;
-  --line-muted: #dde1d7;
-  --line-strong: #768077;
+  --bg-primary: #f4f7fa;
+  --surface-soft: #f8fbfd;
+  --ink-strong: #17212a;
+  --ink-muted: #465563;
+  --ink-subtle: #6c7c89;
+  --ink-accent: #2f7a92;
+  --line-soft: #cfd9e2;
+  --line-muted: #dce5ec;
+  --line-strong: #6d8190;
 }
 
 *,
@@ -35,7 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    linear-gradient(180deg, #f1f0ea 0%, #f7f6f1 36%, #f5f4ef 100%),
+    linear-gradient(180deg, #edf2f6 0%, #f5f8fb 42%, #f4f7fa 100%),
     var(--bg-primary);
 }
 
@@ -49,6 +49,6 @@ p {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #5d6b57;
+  outline: 2px solid #2f7a92;
   outline-offset: 2px;
 }
