@@ -23,12 +23,12 @@ export function HeroSection() {
         <div className="hero-content">
           <p className="overline">Agence IA B2B</p>
           <h1>
-            Orchestrer l IA dans vos operations,
-            <span> avec precision, vitesse et impact commercial.</span>
+            L IA utile, integree a vos operations.
+            <span> Pas des promesses, des resultats mesurables.</span>
           </h1>
           <p className="hero-description">
-            Integria Studio structure, integre et deploie des systemes IA utiles pour vos equipes:
-            automatisations metier, chatbot de conversion et agent vocal operationnel.
+            Integria Studio accompagne les entreprises sur l automatisation, le chatbot et
+            l agent vocal avec une approche deploiement-orientee business.
           </p>
           <div className="hero-cta">
             <a className="button button-primary" href="#contact-form" data-cta="hero-audit">
@@ -55,27 +55,32 @@ export function HeroSection() {
         </div>
 
         <aside className="hero-visual" aria-label="Systeme IA integre">
-          <p className="visual-title">Systeme IA integre a vos flux</p>
-          <div className="orchestration-board">
-            <article className="node node-entry">
-              <h3>Canaux entrants</h3>
-              <p>Site web, email, telephone, support</p>
+          <div className="visual-head">
+            <p className="visual-title">Systeme d orchestration Integria</p>
+            <span>Architecture type de deploiement</span>
+          </div>
+          <div className="orchestration-grid">
+            <article>
+              <p>Entrees</p>
+              <strong>Site, email, appels, support</strong>
             </article>
-            <article className="node node-core">
-              <h3>Noyau Integria</h3>
-              <p>Qualification, orchestration et routage intelligent</p>
+            <article>
+              <p>Intelligence</p>
+              <strong>Qualification, tri, priorisation</strong>
             </article>
-            <article className="node node-output">
-              <h3>Actions metier</h3>
-              <p>CRM a jour, rendez-vous planifies, support priorise</p>
+            <article>
+              <p>Execution</p>
+              <strong>Actions CRM, agenda, support</strong>
             </article>
-            <article className="node node-pilotage">
-              <h3>Pilotage business</h3>
-              <p>Indicateurs de performance et optimisation continue</p>
+            <article>
+              <p>Pilotage</p>
+              <strong>Suivi KPI, optimisation continue</strong>
             </article>
-            <span className="flow flow-a" aria-hidden="true"></span>
-            <span className="flow flow-b" aria-hidden="true"></span>
-            <span className="flow flow-c" aria-hidden="true"></span>
+          </div>
+          <div className="orchestration-rail" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </aside>
       </div>

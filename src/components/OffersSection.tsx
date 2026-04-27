@@ -10,16 +10,16 @@ export function OffersSection() {
         description="Chaque offre est pensee pour un usage metier clair, une integration rapide et un resultat visible."
       />
 
-      <div className="offers-stack">
+      <div className="offers-grid">
         {offers.map((offer, index) => (
           <article key={offer.title} className="offer-card">
-            <div className="offer-index">{`0${index + 1}`}</div>
-            <div className="offer-main">
+            <div className="offer-head">
+              <span className="offer-index">{`0${index + 1}`}</span>
               <h3>{offer.title}</h3>
-              <p className="offer-intro">{offer.intro}</p>
             </div>
+            <p className="offer-intro">{offer.intro}</p>
 
-            <div className="offer-block">
+            <div className="offer-details">
               <div>
                 <h4>Probleme resolu</h4>
                 <p>{offer.problem}</p>
@@ -49,9 +49,11 @@ export function OffersSection() {
               </div>
             </div>
 
-            <a className="text-link" href="#contact-form" data-cta={`offer-card-${index + 1}`}>
-              {offer.cta}
-            </a>
+            <div className="offer-footer">
+              <a className="text-link" href="#contact-form" data-cta={`offer-card-${index + 1}`}>
+                {offer.cta}
+              </a>
+            </div>
           </article>
         ))}
       </div>

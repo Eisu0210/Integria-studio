@@ -1,23 +1,23 @@
 :root {
   font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  --font-display: 'Georgia', 'Times New Roman', serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #2b3438;
-  background-color: #f3efe6;
+  color: #273136;
+  background-color: #f5f4ef;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bg-primary: #f3efe6;
-  --surface-soft: #faf7f0;
-  --ink-strong: #151c1f;
-  --ink-muted: #465157;
-  --ink-subtle: #6f797e;
-  --ink-accent: #9f8350;
-  --line-soft: #cfc5b2;
-  --line-muted: #dcd3c2;
-  --line-strong: #6c7378;
+  --bg-primary: #f5f4ef;
+  --surface-soft: #fbfaf7;
+  --ink-strong: #182126;
+  --ink-muted: #49575d;
+  --ink-subtle: #6a767b;
+  --ink-accent: #697760;
+  --line-soft: #cfd3c8;
+  --line-muted: #dde1d7;
+  --line-strong: #768077;
 }
 
 *,
@@ -35,7 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    linear-gradient(180deg, #ede7db 0%, #f6f2e9 35%, #f3efe6 100%),
+    linear-gradient(180deg, #f1f0ea 0%, #f7f6f1 36%, #f5f4ef 100%),
     var(--bg-primary);
 }
 
@@ -49,6 +49,6 @@ p {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #8a6f3e;
+  outline: 2px solid #5d6b57;
   outline-offset: 2px;
 }
