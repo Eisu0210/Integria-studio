@@ -110,6 +110,12 @@ h1 {
   transform: translateY(-1px);
 }
 
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .button-primary {
   background: var(--text-strong);
   color: var(--bg-primary);
@@ -501,6 +507,20 @@ main {
   margin-top: 0.1rem;
   color: var(--text-muted);
   font-size: 0.82rem;
+}
+
+.form-feedback {
+  margin-top: 0.1rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.form-feedback.is-success {
+  color: #0f766e;
+}
+
+.form-feedback.is-error {
+  color: #b91c1c;
 }
 
 .site-footer {

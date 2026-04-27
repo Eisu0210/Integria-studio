@@ -19,6 +19,32 @@ npm run build
 npm run lint
 ```
 
+## Configuration formulaire lead
+
+Variable d environnement optionnelle:
+
+```bash
+VITE_LEAD_FORM_ENDPOINT=https://votre-endpoint.tld/leads
+```
+
+Si `VITE_LEAD_FORM_ENDPOINT` est configure, le formulaire envoie un `POST` JSON avec:
+
+```json
+{
+  "name": "string",
+  "email": "string",
+  "company": "string",
+  "message": "string",
+  "source": "integria-studio-website",
+  "submittedAt": "ISO-8601 datetime"
+}
+```
+
+Comportement fallback:
+
+- Sans endpoint configure: le bouton principal ouvre un email pre-rempli via `mailto:`.
+- En cas d echec reseau: un message d erreur s affiche et le bouton secondaire permet d envoyer le meme contenu par email sans ressaisie.
+
 ## Structure rapide
 
 ```text
