@@ -11,7 +11,7 @@ export function OffersSection() {
       />
 
       <div className="offer-grid">
-        {offers.map((offer) => (
+        {offers.map((offer, index) => (
           <article key={offer.title} className="offer-card">
             <h3>{offer.title}</h3>
             <p className="offer-intro">{offer.intro}</p>
@@ -44,7 +44,7 @@ export function OffersSection() {
               <p>{offer.integration}</p>
             </div>
 
-            <a className="text-link" href="#contact">
+            <a className="text-link" href="#contact-form" data-cta={`offer-card-${index + 1}`}>
               {offer.cta}
             </a>
           </article>

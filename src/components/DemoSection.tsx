@@ -19,13 +19,12 @@ export function DemoSection() {
       />
 
       <div className="demo-shell">
-        <div className="demo-tabs" role="tablist" aria-label="Scenarios de demonstration">
+        <div className="demo-tabs" aria-label="Scenarios de demonstration">
           {demoScenarios.map((scenario) => (
             <button
               key={scenario.id}
               type="button"
-              role="tab"
-              aria-selected={activeScenarioId === scenario.id}
+              aria-pressed={activeScenarioId === scenario.id}
               className={activeScenarioId === scenario.id ? 'is-active' : ''}
               onClick={() => setActiveScenarioId(scenario.id)}
             >
@@ -34,7 +33,7 @@ export function DemoSection() {
           ))}
         </div>
 
-        <article className="demo-panel" role="tabpanel">
+        <article className="demo-panel">
           <p className="demo-context">{activeScenario.context}</p>
 
           <div className="demo-messages">

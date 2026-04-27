@@ -14,7 +14,7 @@ export function HeroSection() {
             ))}
           </ul>
         </nav>
-        <a className="button button-secondary" href="#contact">
+        <a className="button button-secondary" href="#contact-form" data-cta="header-audit">
           Recevoir un audit
         </a>
       </div>
@@ -28,11 +28,11 @@ export function HeroSection() {
           operationnelles, augmenter la disponibilite et accelerer la conversion.
         </p>
         <div className="hero-cta">
-          <a className="button button-primary" href="#demo">
-            Demander une demo
+          <a className="button button-primary" href="#contact-form" data-cta="hero-audit">
+            Demander un audit
           </a>
-          <a className="button button-ghost" href="#offres">
-            Etudier mon besoin
+          <a className="button button-ghost" href="#contact-form" data-cta="hero-exchange">
+            Reserver un echange
           </a>
         </div>
       </div>

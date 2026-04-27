@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Integria Studio - Site vitrine B2B
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site vitrine moderne pour une agence IA B2B, oriente conversion.
+L objectif est de presenter des offres concretes (automatisation, chatbot, agent vocal), rassurer sur l integration avec les outils existants, et generer des demandes d audit.
 
-Currently, two official plugins are available:
+## Stack technique
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Vite
+- React
+- TypeScript
+- CSS natif (styles modulaires par section)
 
-## React Compiler
+## Commandes utiles
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
+npm run build
+npm run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Structure rapide
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+  components/
+    HeroSection.tsx
+    OffersSection.tsx
+    UseCasesSection.tsx
+    MethodSection.tsx
+    DemoSection.tsx
+    FinalCtaSection.tsx
+    SiteFooter.tsx
+  data/
+    siteContent.ts
+  App.tsx
+  App.css
+  index.css
 ```
+
+## Etat actuel
+
+- V1 complete du site avec sections business principales.
+- Formulaire de lead integre (fallback `mailto:`) pour conversion.
+- CTA relies a la section formulaire avec attributs de tracking (`data-cta`, `data-form`).
+- Section demo IA simplifiee pour eviter une ARIA trompeuse.
+
+## Prochains axes possibles
+
+- Connecter le formulaire a un backend (API, CRM, webhook).
+- Ajouter analytics et suivi de conversion (events CTA + formulaire).
+- Ajouter preuves commerciales (cas clients, KPIs, testimonials).
